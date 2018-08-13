@@ -1,0 +1,269 @@
+:root {
+    --site-color: #f77e9f;
+    --site-mid-color: #f77e9f;
+    --site-gradient-light: #f77e9f;
+    --site-gradient-dark: #f77e9f;
+    --email-icon: #f74d7b;
+}
+
+html, body {
+    height: auto;
+    min-height: 100%;
+    font-size: 16px;
+}
+
+body {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    padding:0;
+    margin:0;
+    color: var(--site-color);
+    text-align: center;
+    background: #00015e url("../img/bg2.jpg") no-repeat right bottom;
+    background-size: auto 100vh;
+}
+
+.measure {
+    margin: 0 auto;
+    max-width: 72rem;
+}
+
+header .measure{
+    max-width: 100vw;
+}
+
+.container {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.mt5 {
+    margin-top: 5.0rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1.0rem;
+}
+
+a img:hover {
+    filter: brightness(120%);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: var(--site-color);
+    text-decoration: none;
+}
+
+/* Header */
+
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+    height: 10.0rem;
+    overflow: hidden;
+    padding-top: 2.5vh;
+    padding-bottom: 1.0rem;
+}
+
+.title {
+    margin-left: 50px;
+    font-size: 4.0rem;
+    padding: 0.6rem 1.5rem;
+    border: 6px solid #f74d7b;
+    border-image-source: linear-gradient(#f9a1a3, #ff2454);
+    border-image-slice: 10;
+    background: -webkit-linear-gradient(#f9a1a3, #ff2454);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.site-header div {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Body Content */
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    padding-top: 2.0rem;
+    min-height: 80vh;
+}
+
+.countdown {
+    font-size: 5.0rem;
+    font-family: 'Prosto One', cursive;
+    color: var(--site-mid-color);
+    background: -webkit-linear-gradient(#ff2454, #f9a1a3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.countdown-text {
+    font-family: 'Prosto One', cursive;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.main p {
+    padding: 2.0rem;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
+}
+
+.main h1 {
+    padding: 2.0rem;
+    margin-left: 1.0rem;
+    margin-right: 1.0rem;
+    line-height: 2.0rem;
+    font-size: 1.4rem;
+}
+
+.fa-envelope {
+    font-size: 3.8rem;
+    color: var(--email-icon);
+    background: -webkit-linear-gradient(4.5rad, #f9a1a3, #ff2454);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mail-link {
+    margin-top: 3.4rem;
+}
+
+/* Footer */
+
+footer {
+    height: 7.0rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.fa-copyright {
+    font-size: 18px;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 48rem) {
+    html, body {
+        font-size: 14px;
+    }
+
+    .mobile-hidden {
+    }
+}
+
+@media screen and (min-width: 64rem) {
+    html, body {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 64rem) and (min-height: 1080px){
+    html, body {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    html, body {
+        font-size: 12px;
+    }
+
+    .main {
+        background-color: rgba(0, 10, 30, 0.5);
+        min-height: 100vh;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 900px) {
+    html, body {
+        font-size: 14px;
+    }
+}
+
+@media screen and (orientation: landscape) and (max-height: 600px) {
+    html, body {
+        font-size: 11px;
+    }
+
+    .main {
+        background-color: rgba(0, 10, 30, 0.5);
+        min-height: 90vh;
+        padding-top: 10vh;
+        padding-left: 0;
+        padding-right: 0;
+        min-width: 100vw;
+    }
+
+    .mail-link {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 36rem) {
+    html, body {
+        font-size: 11px;
+    }
+
+    .mobile-hidden {
+        display: none !important;
+        width: 0;
+        height: 0;
+    }
+
+    .mobile-right{
+        margin-right: -100px;
+    }
+
+    .container {
+        justify-content: space-between;
+    }
+
+    .site-title-img {
+        height: 2.1rem;
+        margin-right: 20px;
+    }
+
+    .main {
+        padding: 0;
+    }
+
+    .countdown {
+        font-size: 4.0rem;
+    }
+
+    .countdown-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-height: 360px) {
+    html, body {
+        font-size: 8px;
+    }
+}
+
