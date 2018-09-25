@@ -68,12 +68,7 @@ a:active {
 /* Header */
 
 .site-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 99;
     width: 100%;
-    height: 10.0rem;
     overflow: hidden;
     padding-top: 2.5vh;
     padding-bottom: 1.0rem;
@@ -102,41 +97,15 @@ a:active {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
-    padding-top: 2.0rem;
     min-height: 80vh;
-}
-
-.countdown {
-    font-size: 5.0rem;
-    font-family: 'Prosto One', cursive;
-    color: var(--site-mid-color);
-    background: -webkit-linear-gradient(#ff2454, #f97173);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-align: center;
-    margin-bottom: 0;
-}
-
-.countdown-text {
-    font-family: 'Prosto One', cursive;
-    margin-top: 0;
-    font-size: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 .main p {
-    padding: 2.0rem;
     margin-left: 1.0rem;
     margin-right: 1.0rem;
-}
-
-.main h1 {
-    padding: 2.0rem;
-    margin-left: 1.0rem;
-    margin-right: 1.0rem;
-    line-height: 2.0rem;
-    font-size: 1.4rem;
 }
 
 .fa-envelope {
@@ -149,6 +118,74 @@ a:active {
 
 .mail-link {
     margin-top: 3.4rem;
+}
+
+.articles-heading {
+    margin: 2.0rem 0;
+    padding: 12px 0;
+}
+
+.article {
+    margin-bottom: 3.8rem;
+}
+
+.article p {
+    margin: 0.5rem;
+}
+
+.article h2 {
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #f97173;
+    border-image-source: linear-gradient(#ff2424, #f97173);
+    border-image-slice: 10;
+    margin-bottom: 0.1rem;
+}
+
+/* Email */
+
+.email-section {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 1.0rem 0;
+}
+
+.email-form {
+    margin: auto;
+    max-width: 20rem;
+}
+
+.email-section label {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+.email-form input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    font-size: 1.15rem;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.email-form  input[type=submit] {
+    width: 100%;
+    background: -webkit-linear-gradient(#f97173, #fc4e50);
+    color: white;
+    font-size: 1.15rem;
+    padding: 8px 20px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.email-form  input[type=submit]:hover {
+    background: -webkit-linear-gradient(#f9acad, #f97173);
 }
 
 /* Footer */
