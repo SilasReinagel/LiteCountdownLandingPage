@@ -21,9 +21,9 @@ body {
     margin:0;
     color: var(--site-color);
     text-align: center;
-    background-size: 111vw 150vh;
-    background: linear-gradient(to bottom right, #031e6f, #0888e9) no-repeat fixed 0 0;
-    min-height: 100%;;
+    background: #031e6f url("../img/bg4.jpg") no-repeat fixed center;
+    background-size: cover;
+    min-height: 100%;
 }
 
 .measure {
@@ -72,7 +72,6 @@ a:active {
     width: 100%;
     overflow: hidden;
     padding-top: 2.5vh;
-    padding-bottom: 1.0rem;
 }
 
 .title {
@@ -124,9 +123,6 @@ a:active {
 
 .article h2 {
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #f97173;
-    border-image-source: linear-gradient(#ff2424, #f97173);
-    border-image-slice: 10;
     margin-bottom: 0.1rem;
 }
 
