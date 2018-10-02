@@ -157,6 +157,10 @@ a:active {
     box-sizing: border-box;
 }
 
+.invalid-input {
+    border: 4px solid #d00 !important;
+}
+
 .email-form  input[type=submit] {
     width: 100%;
     background: -webkit-linear-gradient(#f97173, #fc4e50);
@@ -171,6 +175,12 @@ a:active {
 
 .email-form  input[type=submit]:hover {
     background: -webkit-linear-gradient(#f9acad, #f97173);
+}
+
+.email-success {
+    margin: auto;
+    max-width: 20rem;
+    display: none;
 }
 
 /* Footer */

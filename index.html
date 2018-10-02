@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Prosto+One|Raleway">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="./js/submitemail.js"></script>
 
     <link rel="apple-touch-icon" sizes="57x57" href="ico/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="ico/apple-icon-60x60.png">
@@ -61,11 +62,14 @@
             </a>
         </div>
         <div class="email-section">
-            <form class="email-form">
+            <form id="email-form" class="email-form">
                 <label for="email-entry">Interested in JThereuem?</label>
                 <input type="text" id="email-entry" name="Email" placeholder="Your email...">
-                <input type="submit" value="Submit">
+                <input id="submit-email" type="submit" value="Submit">
             </form>
+            <div id="email-submitted" class="email-success">
+                <h2>Submitted Email</h2>
+            </div>
         </div>
     </div>
 </body>
