@@ -1,9 +1,8 @@
 :root {
-    --site-color: #ff608f;
-    --site-mid-color: #f77e9f;
+    --site-color: #aeeefe;
+    --site-mid-color: #aeeefe;
     --site-gradient-light: #f97173;
     --site-gradient-dark: #f77e9f;
-    --email-icon: #f74d7b;
 }
 
 html, body {
@@ -122,7 +121,8 @@ a:active {
 }
 
 .article h2 {
-    padding-bottom: 0.5rem;
+    font-size: 1.8rem;
+    margin-top: 3.2rem;
     margin-bottom: 0.1rem;
 }
 
