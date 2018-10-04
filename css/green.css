@@ -1,0 +1,27 @@
+.title {
+    margin-left: 50px;
+    font-size: 4.0rem;
+    padding: 0.6rem 1.5rem;
+    border: 6px solid #2dca00;
+    border-image-source: linear-gradient(#36f100, #219300);
+    border-image-slice: 10;
+    background: -webkit-linear-gradient(#36f100, #219300);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.email-form  input[type=submit] {
+    width: 100%;
+    background: -webkit-linear-gradient(#36f100, #219300);
+    color: white;
+    font-size: 1.15rem;
+    padding: 8px 20px;
+    margin: 4px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.email-form  input[type=submit]:hover {
+    background: -webkit-linear-gradient(#a0ca94, #36f100);
+}
