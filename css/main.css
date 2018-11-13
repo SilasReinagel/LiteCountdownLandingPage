@@ -97,7 +97,6 @@ a:active {
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
-    overflow: hidden;
     min-height: 75vh;
     margin-top: 1.5rem;
 }
@@ -139,18 +138,18 @@ a:active {
     padding: 1.0rem 0;
 }
 
-.email-form {
+.signup-form {
     margin: auto;
     max-width: 20rem;
 }
 
-.email-section label {
+.signup-section label {
     font-size: 1.4rem;
     font-weight: bold;
     margin: 8px 0;
 }
 
-.email-form input[type=text] {
+.signup-form input[type=text] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -177,14 +176,18 @@ a:active {
     cursor: pointer;
 }
 
-.email-form  input[type=submit]:hover {
+.signup-form  input[type=submit]:hover {
     background: -webkit-linear-gradient(#f9acad, #f97173);
 }
 
-.email-success {
+.signup-success {
     margin: auto;
     max-width: 20rem;
     display: none;
+}
+
+.signup-section {
+    margin-top: -30px;
 }
 
 /* Footer */
