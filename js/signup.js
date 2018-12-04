@@ -33,18 +33,6 @@ window.onload = function ()
         }
     };
 
-
-    document.getElementById('submit-test').onclick = function(e) {
-        withSavedEntries(function (entries) {
-            console.log(entries);
-            appendEntry(entries, {
-                email: '123@123.com',
-                name: 'Silas',
-                company: 'Test'
-            })
-        });
-    };
-
     function validateEmail(email) {
         var re = /\S+@\S+\.\S+/;
         return re.test(email);

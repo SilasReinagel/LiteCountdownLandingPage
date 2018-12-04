@@ -90,6 +90,11 @@ a:active {
     align-items: center;
 }
 
+.site-header .nav-link {
+    margin: 16px 40px 0 20px;
+    font-size: 1.8rem;
+}
+
 /* Body Content */
 
 .main {
@@ -97,7 +102,7 @@ a:active {
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
-    min-height: 75vh;
+    min-height: 72vh;
     margin-top: 1.5rem;
 }
 
@@ -107,7 +112,7 @@ a:active {
 }
 
 .articles-section {
-    margin-top: 4.4rem;
+    margin-top: 3.6rem;
 }
 
 .articles-heading {
@@ -129,7 +134,7 @@ a:active {
     margin-bottom: 0.1rem;
 }
 
-/* Email */
+/* Signup */
 
 .email-section {
     display: flex;
@@ -149,6 +154,11 @@ a:active {
     margin: 8px 0;
 }
 
+.signup-section a {
+    color: #001d63;
+    font-weight: bold;
+}
+
 .signup-form input[type=text] {
     width: 100%;
     padding: 12px 20px;
@@ -164,30 +174,20 @@ a:active {
     border: 4px solid #d00 !important;
 }
 
-.email-form  input[type=submit] {
-    width: 100%;
-    background: -webkit-linear-gradient(#f97173, #fc4e50);
-    color: white;
-    font-size: 1.15rem;
-    padding: 8px 20px;
-    margin: 4px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-.signup-form  input[type=submit]:hover {
-    background: -webkit-linear-gradient(#f9acad, #f97173);
-}
-
 .signup-success {
-    margin: auto;
+    margin: 16px;
     max-width: 20rem;
     display: none;
 }
 
 .signup-section {
     margin-top: -30px;
+}
+
+/* Audio Links */
+
+.audio-article {
+    margin: 16px;
 }
 
 /* Footer */
